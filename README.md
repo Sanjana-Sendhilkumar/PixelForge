@@ -3,6 +3,7 @@ This project is a simple image processing program that accepts an image as input
 
 The project demonstrates basic concepts of digital image processing such as pixel manipulation, RGB colour analysis, grayscale conversion, and binary pixel classification.
 
+
 #Features of this project:
 1. Accepts an image file from the user.
 
