@@ -1,3 +1,7 @@
+git add README.md
+git commit -m "Display code in README"
+git push
+
 from PIL import Image  # importing image from pillow
 
 # accepting the image's name
