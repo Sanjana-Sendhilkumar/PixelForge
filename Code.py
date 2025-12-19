@@ -12,7 +12,7 @@ img = Image.open(image_name).convert("RGB")
 pixels_rgb = img.load()
 width, height = img.size  # Getting the height and width of the image in pixels
 
-total_red = total_green = total_blue = 0
+total_red = total_green = total_blue = 0  # intialising the variables
 
 for x in range(width):
     for y in range(height):
@@ -21,12 +21,13 @@ for x in range(width):
         total_green += g
         total_blue += b
 
-number_pixels = width * height
+number_pixels = width * height  # calculates the total number of pixels in the image
 
 avg_red = total_red / number_pixels
 avg_green = total_green / number_pixels
 avg_blue = total_blue / number_pixels
 
+# checking the intensities using loops
 if avg_red > avg_green and avg_red > avg_blue:
     dominant_color = "Red"
 elif avg_green > avg_red and avg_green > avg_blue:
@@ -62,3 +63,4 @@ high_res_img.save("grayscale_high_resolution.png")
 print("Grayscale and high-resolution images saved successfully.")
 gray_img.show()
 high_res_img.show()
+img.show()
