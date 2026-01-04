@@ -1,3 +1,4 @@
+import wx
 from PIL import Image  # importing image from pillow
 
 # accepting the image's name
@@ -64,3 +65,14 @@ print("Grayscale and high-resolution images saved successfully.")
 gray_img.show()
 high_res_img.show()
 img.show()
+
+#message dialogue for when the image is saved successfully.
+app = wx.App()
+frame = wx.Frame(None, title='Message Dialogue Box!!!', size=(500, 500))
+
+dlg = wx.MessageDialog(
+    frame, "Thank you for using Pixel Forge!", "Image saved successfully!", wx.YES_NO | wx.ICON_INFORMATION)
+dlg.ShowModal()
+dlg.Destroy()  # for closing the dialogue, the same way as displaying it
+frame.Show()
+app.MainLoop()
